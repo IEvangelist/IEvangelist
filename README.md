@@ -5,5 +5,5 @@
 - 😄 Pronouns: he/him/his
 - ⚡ Fun fact: I come from a family of nine!
 
-<img align="left" src="https://github-readme-stats.vercel.app/api?username=IEvangelist&show_icons=true&theme=dark" alt="IEvangelist" />
 <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=IEvangelist&theme=dark&layout=compact&hide=html,javascript&langs_count=6" alt="IEvangelist" />
+<img align="left" src="https://github-readme-stats.vercel.app/api?username=IEvangelist&show_icons=true&theme=dark" alt="IEvangelist" />
