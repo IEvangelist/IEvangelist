@@ -1,8 +1,8 @@
 ### Hi, I'm David 👋
 
-<details><summary><b>👉🏼 [ IEvangelist Explained... ] 👈🏼</b></summary>
+I often am asked about my GitHub handle:<details><summary><b>👉🏼 CLICK [ IEvangelist explanation... ] HERE 👈🏼</b></summary>
 
-Use your imagination.
+Use your imagination, and a bit of C#.
 
 ```csharp
 interface IEvangelist : IAcceptFailure,
@@ -41,8 +41,9 @@ interface IEvangelist : IAcceptFailure,
 </details>
 
 - 💬 Ask me about C#, TypeScript, .NET Core, ASP.NET Core, Blazor, SignalR, Azure, Rx, and Angular
-- 📫 How to reach me: [@davidpine7](https://twitter.com/davidpine7), [davidpine.net](https://davidpine.net/)
-- 😄 Pronouns: he/him/his
+- 🌎 [https://davidpine.net](https://davidpine.net)
+- 🐤 [@davidpine7](https://twitter.com/davidpine7)
+- 😄 Pronouns: [he/him/his](https://pronoun.is/he)
 - ⚡ Fun fact: I come from a family of nine!
 
 <img src="https://github-readme-stats.vercel.app/api?username=IEvangelist&show_icons=true&theme=dark" alt="IEvangelist" />
