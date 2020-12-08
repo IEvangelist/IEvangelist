@@ -1,8 +1,8 @@
 ### Hi, I'm David 👋
 
-<details><summary><h4>👉🏼 [ IEvangelist Explained ] 👈🏼</h4></summary>
+<details><summary><b>👉🏼 [ IEvangelist Explained... ] 👈🏼</b></summary>
 
-You use your imagination...
+Use your imagination.
 
 ```csharp
 interface IEvangelist : IAcceptFailure,
