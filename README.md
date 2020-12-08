@@ -1,6 +1,6 @@
 ### Hi, I'm David 👋
 
-<details><summary>[ IEvangelist Explained ]</summary>
+<details><summary><h4>👉🏼 [ IEvangelist Explained ] 👈🏼</h4></summary>
 
 You use your imagination...
 
