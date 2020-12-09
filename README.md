@@ -1,6 +1,6 @@
 ### Hi, I'm David 👋
 
-I often am asked about my GitHub handle:<details><summary><b>👉🏼 CLICK [ IEvangelist explanation... ] HERE 👈🏼</b></summary>
+I'm often asked about my GitHub handle:<details><summary><b>👉🏼 CLICK [ IEvangelist explanation... ] HERE 👈🏼</b></summary>
 
 Use your imagination, and a bit of C#.
 
