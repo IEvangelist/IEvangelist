@@ -8,7 +8,7 @@
 [![Blog Badge](https://img.shields.io/badge/-Blog%20RSS-darkred?style=for-the-badge&logo=rss&logoColor=yellow&link=https://davidpine.net/index.xml)](https://davidpine.net/index.xml)
 [![.NET Docs Show Badge](https://img.shields.io/badge/-.NET%20Docs%20Show-512BD4?style=for-the-badge&logo=youtube&logoColor=red&link=https://dotnetdocs.dev)](https://dotnetdocs.dev)
 [![Github Badge](https://img.shields.io/badge/-IEvangelist-404040?style=for-the-badge&logo=github&logoColor=cyan&link=https://github.com/IEvangelist)](https://github.com/IEvangelist)
-[![.NET Badge](https://img.shields.io/badge/-.NET-8080FF?style=for-the-badge&logo=c%20sharp&logoColor=black&link=https://dot.net)](https://dot.net)
+[![.NET Badge](https://img.shields.io/badge/-.NET-8080FF?style=for-the-badge&logo=c%20sharp&logoColor=white&link=https://dot.net)](https://dot.net)
 
 I work in Developer Relations at Microsoft, focusing on [.NET](https://docs.microsoft.com/dotnet) and [Azure](https://docs.microsoft.com/azure) developer content. I'm recognized as a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-david_pine) in Web Technologies, and is [Twilio Champion](https://www.twilio.com/champions). David focuses on the developer community, actively seeking opportunities to share knowledge through [speaking](http://davidpine.net/speaking) engagements around the world. David advocates for [open-source](https://github.com/IEvangelist), the .NET Foundation, C#, TypeScript, SignalR, Reactive Extensions, Azure and .NET. He's a founding member and co-host of [The .NET Docs Show](https://dotnetdocs.dev) Twitch stream, part of the .NET Live TV family of streaming shows. Follow David on Twitter at [@davidpine7](https://twitter.com/davidpine7) 🤘🏽.
 
