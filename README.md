@@ -16,4 +16,4 @@ I work in Developer Relations at Microsoft, focusing on [.NET](https://docs.micr
 ## Useless stats:
 
 <img src="https://github-readme-stats.vercel.app/api?username=IEvangelist&show_icons=true&theme=dark&count_private=true" alt="IEvangelist" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IEvangelist&theme=dark&layout=compact&hide=html,javascript&langs_count=6" alt="IEvangelist" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IEvangelist&theme=dark&layout=compact&hide=html,javascript,CSS,PowerShell&langs_count=6" alt="IEvangelist" />
