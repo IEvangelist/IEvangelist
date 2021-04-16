@@ -1,5 +1,5 @@
 <a href="https://github.com/IEvangelist">
-  <img alt="Hi, I'm David 👋" src="https://github.com/IEvangelist/IEvangelist/blob/master/gh-profile-sm.gif" />
+  <img alt="Hi, I'm David 👋" src="https://github.com/IEvangelist/IEvangelist/blob/main/gh-profile-sm.gif" />
 </a>
 
 [![Linkedin Badge](https://img.shields.io/badge/-David%20Pine-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dpine/)](https://www.linkedin.com/in/dpine/)
