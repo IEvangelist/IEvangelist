@@ -11,6 +11,8 @@
 [![.NET Badge](https://img.shields.io/badge/-.NET-512BD4?style=flat&logo=c%20sharp&logoColor=white&link=https://dot.net)](https://dot.net)
 [![Twitch Badge](https://img.shields.io/badge/-Visual%20Studio-9146ff?style=flat&logo=twitch&logoColor=white&link=https://www.twitch.tv/visualstudio)](https://www.twitch.tv/visualstudio)
 
+🔗 <a rel="me" href="https://techhub.social/@davidpine">Mastodon</a>
+
 ### 📖 Author of [Learning Blazor: Build Single-Page Apps with WebAssembly and C# book via O'Reilly Media](https://bit.ly/learning-blazor).
 
 I work in Developer Relations at Microsoft, focusing on [.NET](https://docs.microsoft.com/dotnet) and [Azure](https://docs.microsoft.com/azure) developer content. I'm recognized as a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-david-pine) in Web Technologies, and is [Twilio Champion](https://www.twilio.com/champions). I'm the O'Reilly Media author of "Learning Blazor: Build Single-Page Apps with WebAssembly and C#". I love focusing on the developer community, actively seeking opportunities to share knowledge through [speaking](http://davidpine.net/speaking) engagements around the world. I advocate for [open-source](https://github.com/IEvangelist), the .NET Foundation, C#, TypeScript, SignalR, Reactive Extensions, Azure and .NET. I'm a co-host of the [On .NET Live](https://dotnet.microsoft.com/live/on-dotnet-live) stream, part of the .NET Live TV family of streaming shows. Follow me on Twitter at [@davidpine7](https://twitter.com/davidpine7) 🤘🏽.
