@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
     paths:
-    - ./.github/workflows/main.yml
+    - .github/workflows/main.yml
   workflow_dispatch:
     inputs:
       reason:
