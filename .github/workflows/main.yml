@@ -4,6 +4,8 @@ on:
   schedule: [{cron: "0 7 * * *"}] # Runs at 07:00 (daily). Actions schedules run at most every 5 minutes using UTC time
   push:
     branches: [ main ]
+    paths:
+    - ./.github/workflows/main.yml
   workflow_dispatch:
     inputs:
       reason:
