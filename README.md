@@ -17,8 +17,8 @@
 
 I work in Developer Relations at Microsoft, focusing on [.NET](https://docs.microsoft.com/dotnet) and [Azure](https://docs.microsoft.com/azure) developer content. I'm recognized as a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-david-pine) in Web Technologies, and is [Twilio Champion](https://www.twilio.com/champions). I'm the O'Reilly Media author of "Learning Blazor: Build Single-Page Apps with WebAssembly and C#". I love focusing on the developer community, actively seeking opportunities to share knowledge through [speaking](http://davidpine.net/speaking) engagements around the world. I advocate for [open-source](https://github.com/IEvangelist), the .NET Foundation, C#, TypeScript, SignalR, Reactive Extensions, Azure and .NET. I'm a co-host of the [On .NET Live](https://dotnet.microsoft.com/live/on-dotnet-live) stream, part of the .NET Live TV family of streaming shows. Follow me on Twitter at [@davidpine7](https://twitter.com/davidpine7) 🤘🏽.
 
-## Useless stats:
+## Metrics 🤓:
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=IEvangelist&theme=dark&hide_border=true)](https://davidpine.net)
-[![GitHub Statistics](https://github-readme-stats.vercel.app/api?username=IEvangelist&show_icons=true&theme=dark&hide_border=true&count_private=true)](https://twitter.com/davidpine7)
-[![GitHub Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=IEvangelist&theme=dark&hide_border=true&layout=compact&hide=html,javascript,CSS,PowerShell&langs_count=9)](https://davidpine.net)
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
