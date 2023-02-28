@@ -45,11 +45,14 @@ jobs:
           plugin_lines: yes
           plugin_lines_sections: base, repositories, history
           repositories_affiliations: owner,contributor
-          plugin_screenshot: yes
-          plugin_screenshot_title: 'David Pine''s website'
-          plugin_screenshot_url: https://davidpine.net
-          plugin_screenshot_mode: image
-          plugin_screenshot_viewport: '{ "width": "1280", "height": "2560" }'
+          plugin_achievements: yes
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          #plugin_screenshot: yes
+          #plugin_screenshot_title: 'David Pine''s website'
+          #plugin_screenshot_url: https://davidpine.net
+          #plugin_screenshot_mode: image
+          #plugin_screenshot_viewport: '{ "width": "1280", "height": "2560" }'
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 2410379
           plugin_stackoverflow_sections: answers-top
