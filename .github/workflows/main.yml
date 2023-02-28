@@ -26,12 +26,19 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           # Options
+          optimize: svg
+          experimental_features: --optimize-svg
+          use_prebuilt_image: yes
+          config_padding: 0, 10 + 8%
+          config_display: large
           user: IEvangelist
           template: classic
           base: header, activity, community, repositories, metadata
           config_octicon: yes
           config_timezone: America/Chicago
           plugin_introduction: yes
+          plugin_achievements: yes
+          plugin_achievements_display: compact
           plugin_habits: yes
           plugin_habits_from: 500
           plugin_habits_charts: yes
@@ -44,8 +51,7 @@ jobs:
           plugin_isocalendar_duration: full-year
           plugin_lines: yes
           plugin_lines_sections: base, repositories, history
-          repositories_affiliations: owner,contributor
-          plugin_achievements: yes
+          repositories_affiliations: owner,contributor          
           plugin_followup: yes
           plugin_followup_indepth: yes
           #plugin_screenshot: yes
@@ -60,3 +66,17 @@ jobs:
           plugin_code: yes
           plugin_code_days: 30
           plugin_code_languages: csharp, typescript, javascript, razor
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_licenses: yes
+          plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
+          plugin_licenses_legal: no
+          plugin_licenses_ratio: yes
+          plugin_discussions: yes
+          plugin_discussions_categories_limit: 8
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+          plugin_notable_repositories: yes
+          plugin_gists: yes
+          plugin_people: yes
+          plugin_people_types: followers
