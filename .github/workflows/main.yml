@@ -32,11 +32,6 @@ jobs:
           experimental_features: --optimize-svg
           use_prebuilt_image: yes
           config_padding: 0, 10 + 8%
-          extras_css: |
-            svg {
-              display: inline-block;
-              width: 100%;
-            }
           user: IEvangelist
           template: classic
           base: header, activity, community, repositories, metadata
