@@ -16,8 +16,8 @@ I work in Developer Relations at Microsoft, specializing in [.NET](https://docs.
 ## 💜 Details
 
 <details open>
-  <summary><strong>👆 Click To Collapse</strong></summary>
-<picture>
-  <img src="/github-metrics.svg" alt="Metrics" style="display: inline-block; width: 35vw;">
-</picture>
+  <summary><strong>👆 Click to Collapse/Expand</strong></summary>
+  <picture>
+    <img src="/github-metrics.svg" alt="Metrics">
+  </picture>
 </details>  
