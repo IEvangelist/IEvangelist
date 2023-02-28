@@ -74,13 +74,12 @@ jobs:
           plugin_code_languages: csharp, typescript, javascript, razor
           plugin_topics: yes
           plugin_topics_mode: icons
-          plugin_licenses: yes
-          plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
-          plugin_licenses_legal: no
-          plugin_licenses_ratio: yes
+          #plugin_licenses: yes
+          #plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
+          #plugin_licenses_legal: no
+          #plugin_licenses_ratio: yes
           plugin_discussions: yes
           plugin_discussions_categories_limit: 8
-          plugin_notable: yes
           plugin_gists: yes
           plugin_people: yes
           plugin_people_types: followers
