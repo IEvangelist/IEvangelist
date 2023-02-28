@@ -49,11 +49,7 @@ jobs:
           plugin_screenshot_title: 'David Pine''s website'
           plugin_screenshot_url: https://davidpine.net
           plugin_screenshot_mode: image
-          plugin_screenshot_viewport: |
-            {
-              "width": 1280, 
-              "height": 2560
-            }
+          plugin_screenshot_viewport: '{ "width": "1280", "height": "2560" }'
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 2410379
           plugin_stackoverflow_sections: answers-top
