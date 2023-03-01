@@ -37,6 +37,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_octicon: yes
           config_timezone: America/Chicago
+          config_order: base.header, base.activity+community, introduction, achievements, traffic, code, languages, lines
           plugin_introduction: yes
           plugin_introduction_title: yes
           plugin_achievements: yes
