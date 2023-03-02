@@ -3,6 +3,7 @@
 [![Linkedin Badge](https://img.shields.io/badge/-David%20Pine-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dpine/)](https://www.linkedin.com/in/dpine/)
 [![Stack Overflow Badge](https://img.shields.io/badge/-David%20Pine-black?style=flat&logo=Stack%20Overflow&logoColor=orange&link=https://stackoverflow.com/users/2410379/david-pine)](https://stackoverflow.com/users/2410379/david-pine)
 [![Twitter Badge](https://img.shields.io/badge/-@davidpine7-1da1f2?style=flat&logo=twitter&logoColor=white&link=https://twitter.com/davidpine7)](https://twitter.com/davidpine7)
+[![Mastodon Badge](https://img.shields.io/mastodon/follow/109366349072155189?domain=https%3A%2F%2Fdotnet.social&style=social)](https://dotnet.social/@davidpine)
 [![Blog Badge](https://img.shields.io/badge/-Blog%20RSS-darkred?style=flat&logo=rss&logoColor=yellow&link=https://davidpine.net/index.xml)](https://davidpine.net/index.xml)
 [![One .NET Live Badge](https://img.shields.io/badge/-On%20.NET%20Live-7014e8?style=flat&logo=youtube&logoColor=red&link=https://dotnet.microsoft.com/live/on-dotnet-live)](https://dotnet.microsoft.com/live/on-dotnet-live)
 [![Github Badge](https://img.shields.io/badge/-IEvangelist-404040?style=flat&logo=github&logoColor=cyan&link=https://github.com/IEvangelist)](https://github.com/IEvangelist)
