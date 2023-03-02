@@ -11,7 +11,7 @@
 
 ## 🤓 Introduction
 
-I work in Developer Relations at Microsoft, specializing in [.NET](https://docs.microsoft.com/dotnet) and [Azure](https://docs.microsoft.com/azure) developer content. I'm also a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-david-pine) in Web Technologies, Twilio Champion, and author of ["Learning Blazor: Build Single-Page Apps with WebAssembly and C#"](https://bit.ly/learning-blazor). David co-hosts the [On .NET Live](https://dotnet.microsoft.com/live/on-dotnet-live) stream and can be followed on Twitter at [@davidpine7](https://twitter.com/davidpine7).
+I work in Developer Relations at Microsoft, specializing in [.NET](https://docs.microsoft.com/dotnet) and [Azure](https://docs.microsoft.com/azure) developer content. I'm also a [Google Developer Expert](https://developers.google.com/community/experts/directory/profile/profile-david-pine) in Web Technologies, Twilio Champion, and author of ["Learning Blazor: Build Single-Page Apps with WebAssembly and C#"](https://bit.ly/learning-blazor). I co-host the [On .NET Live](https://dotnet.microsoft.com/live/on-dotnet-live) stream and can be followed on Twitter at [@davidpine7](https://twitter.com/davidpine7) and on Mastodon at [@davidpine](https://dotnet.social/@davidpine).
 
 ## 💜 Details
 
