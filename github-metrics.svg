@@ -1706,29 +1706,29 @@
                 
                   <rect class="day" x="0" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                 
-                  <rect class="day" x="15" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                  <rect class="day" x="15" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                 
-                  <rect class="day" x="30" y="0" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
+                  <rect class="day" x="30" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                 
-                  <rect class="day" x="45" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                  <rect class="day" x="45" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                 
-                  <rect class="day" x="60" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                  <rect class="day" x="60" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                 
-                  <rect class="day" x="75" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                  <rect class="day" x="75" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                 
-                  <rect class="day" x="90" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                  <rect class="day" x="90" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                 
                   <rect class="day" x="105" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                 
-                  <rect class="day" x="120" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
+                  <rect class="day" x="120" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                 
-                  <rect class="day" x="135" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                  <rect class="day" x="135" y="0" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                 
-                  <rect class="day" x="150" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                  <rect class="day" x="150" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
                 
-                  <rect class="day" x="165" y="0" width="11" height="11" fill="#40c463" rx="2" ry="2"/>
+                  <rect class="day" x="165" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                 
-                  <rect class="day" x="180" y="0" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                  <rect class="day" x="180" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                 
                   <rect class="day" x="195" y="0" width="11" height="11" fill="#ebedf0" rx="2" ry="2"/>
                 
@@ -1884,7 +1884,7 @@
             <div class="field">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/></svg>
               <span class="code">ca2e2c1b</span>
-              <span class="code">src/action/get-inputs.ts</span>
+              <span class="code">src/file-formats/resource-file.ts</span>
               <span class="code"><span class="snippet additions">++1</span> <span class="snippet deletions">--1</span></span>
             </div>
           </section>
@@ -1892,7 +1892,7 @@
         <div class="row">
           <section class="snippet">
             <div class="body markdown">
-              <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -19,7 +19,7 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">*   "[ 'es', 'de', 'fr' ]"<br /></span><span class="token prefix unchanged">·</span><span class="token line">*/<br /></span><span class="token prefix unchanged">·</span><span class="token line">export const getQuestionableArray = (<br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line"> inputName: string<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line"> inputName: string,<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">): string[] | undefined =&gt; {<br /></span><span class="token prefix unchanged">·</span><span class="token line"> const value = getInput(inputName);<br /></span><span class="token prefix unchanged">·</span><span class="token line"> if (value) {</span></span></code>
+              <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -18,7 +18,7 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">export const traverseResx = (<br /></span><span class="token prefix unchanged">·</span><span class="token line">instance: ResourceFile,<br /></span><span class="token prefix unchanged">·</span><span class="token line">name: string,<br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line">dataAction: (data: Data) =&gt; void<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">dataAction: (data: Data) =&gt; void,<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">) =&gt; {<br /></span><span class="token prefix unchanged">·</span><span class="token line">if (instance &amp;&amp; instance.root &amp;&amp; instance.root.data) {<br /></span><span class="token prefix unchanged">·</span><span class="token line">  const data = instance.root.data.find((d) =&gt; d.$.name === name);</span></span></code>
             </div>
           </section>
         </div>
@@ -2073,7 +2073,7 @@
                 <div class="field ">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"/></svg>
                   
-                    8.31k views in last two weeks
+                    8.52k views in last two weeks
                   
                 </div>
             
@@ -2944,7 +2944,7 @@ Then you could use this version this way:
           
             <span>These metrics do not include all private contributions</span>
           
-          <span>Last updated 14 Jul 2023, 02:06:44 (timezone America/Chicago) with lowlighter/metrics@3.33.0</span>
+          <span>Last updated 15 Jul 2023, 02:06:40 (timezone America/Chicago) with lowlighter/metrics@3.33.0</span>
         </footer>
       
 
