@@ -44,7 +44,6 @@ jobs:
           user: IEvangelist
           template: classic
           base: header, activity, community, repositories, metadata
-          config_padding: 0, 10 + 8%
           config_display: large
           config_octicon: yes
           config_timezone: America/Chicago
