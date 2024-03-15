@@ -38,12 +38,17 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Options
+          optimize: svg
+          experimental_features: --optimize-svg
+          use_prebuilt_image: yes
           user: IEvangelist
           template: classic
           base: header, activity, community, repositories, metadata
+          config_padding: 0, 10 + 8%
           config_display: large
           config_octicon: yes
           config_timezone: America/Chicago
+          config_order: base.header, base.activity+community, introduction, achievements, traffic, code, languages, lines
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_achievements_secrets: yes
@@ -76,10 +81,6 @@ jobs:
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
           plugin_lines_sections: base, repositories, history
-          plugin_pagespeed: yes
-          plugin_pagespeed_detailed: yes
-          plugin_pagespeed_screenshot: yes
-          plugin_pagespeed_url: .user.website
           plugin_people: yes
           plugin_people_identicons: yes
           plugin_people_limit: 24
