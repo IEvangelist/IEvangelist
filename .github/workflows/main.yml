@@ -44,7 +44,6 @@ jobs:
           user: IEvangelist
           template: classic
           base: header, activity, community, repositories, metadata
-          config_display: large
           config_octicon: yes
           config_timezone: America/Chicago
           config_order: base.header, base.activity+community, introduction, achievements, traffic, code, languages, lines
