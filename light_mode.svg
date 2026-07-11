@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="530px" font-size="15px" role="img" aria-labelledby="title desc">
+<title id="title">David Pine GitHub profile README card (light mode)</title>
+<desc id="desc">A terminal-inspired profile card for David Pine.</desc>
+<style>
+@font-face { src: local('Consolas'), local('Consolas Bold'); font-family: 'ConsolasFallback'; font-display: swap; -webkit-size-adjust: 109%; size-adjust: 109%; }
+.text { fill: #1F2937; }
+.key { fill: #BE185D; font-weight: 700; }
+.value { fill: #0F766E; }
+.accent { fill: #7E22CE; font-weight: 700; }
+.muted { fill: #4B5563; }
+.cc { fill: #6B7280; }
+text, tspan { white-space: pre; }
+</style>
+<defs>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#BE185D"/><stop offset="48%" stop-color="#7E22CE"/><stop offset="100%" stop-color="#0F766E"/></linearGradient>
+  <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#BE185D" stop-opacity="0.30"/><stop offset="55%" stop-color="#7E22CE" stop-opacity="0.22"/><stop offset="100%" stop-color="#0F766E" stop-opacity="0.26"/></linearGradient>
+  <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#7E22CE" flood-opacity="0.30"/></filter>
+</defs>
+<rect width="985" height="530" fill="#FFF7FE" rx="18"/>
+<circle cx="920" cy="68" r="94" fill="#7E22CE" opacity="0.15"/>
+<circle cx="848" cy="462" r="76" fill="#0F766E" opacity="0.13"/>
+<circle cx="100" cy="456" r="66" fill="#BE185D" opacity="0.14"/>
+<rect x="24" y="24" width="937" height="482" fill="#FFFFFF" stroke="url(#edge)" stroke-width="2" rx="18" filter="url(#soft-shadow)"/>
+<rect x="56" y="50" width="873" height="56" fill="url(#bar)" rx="14"/>
+<text class="text">
+  <tspan x="80" y="84" class="accent" font-size="24px">David Pine</tspan>
+  <tspan x="905" y="84" class="muted" text-anchor="end">@IEvangelist</tspan>
+  <tspan x="80" y="170" class="key">Uptime</tspan><tspan class="cc"> ............................ </tspan><tspan class="value">12+ years on GitHub</tspan>
+  <tspan x="80" y="193" class="key">Host</tspan><tspan class="cc"> ........................................ </tspan><tspan class="value">Microsoft</tspan>
+  <tspan x="80" y="216" class="key">Kernel</tspan><tspan class="cc"> ....................... </tspan><tspan class="value">Senior Software Engineer</tspan>
+  <tspan x="80" y="239" class="key">IDE</tspan><tspan class="cc"> ............ </tspan><tspan class="value">GitHub Copilot App, Visual Studio Code</tspan>
+  <tspan x="80" y="296" class="accent">- Languages </tspan><tspan class="cc">-------------------------------------------</tspan>
+  <tspan x="80" y="324" class="key">Programming</tspan><tspan class="cc"> ........ </tspan><tspan class="value">C#, TypeScript, JavaScript, Python</tspan>
+  <tspan x="80" y="347" class="key">Markup</tspan><tspan class="cc"> ................ </tspan><tspan class="value">HTML, CSS, Markdown, JSON, YAML</tspan>
+  <tspan x="80" y="370" class="key">Real</tspan><tspan class="cc"> .......................................... </tspan><tspan class="value">English</tspan>
+  <tspan x="80" y="412" class="accent">- Focus </tspan><tspan class="cc">-----------------------------------------------</tspan>
+  <tspan x="80" y="444" class="key">Building</tspan><tspan class="cc"> .................... </tspan><tspan class="value">Aspire, developer tooling</tspan>
+  <tspan x="80" y="468" class="key">Creating</tspan><tspan class="cc"> ............... </tspan><tspan class="value">Developer and user experiences</tspan>
+  <tspan x="620" y="164" class="accent">- Contact </tspan><tspan class="cc">---------------------</tspan>
+  <tspan x="620" y="194" class="key">Website</tspan><tspan class="cc"> ......... </tspan><tspan class="value">davidpine.dev</tspan>
+  <tspan x="620" y="217" class="key">GitHub</tspan><tspan class="cc"> ............ </tspan><tspan class="value">IEvangelist</tspan>
+  <tspan x="620" y="240" class="key">X</tspan><tspan class="cc"> ................. </tspan><tspan class="value">@davidpine7</tspan>
+  <tspan x="620" y="263" class="key">Bluesky</tspan><tspan class="cc"> ........ </tspan><tspan class="value">@davidpine.dev</tspan>
+  <tspan x="620" y="286" class="key">LinkedIn</tspan><tspan class="cc"> ............. </tspan><tspan class="value">in/dpine</tspan>
+  <tspan x="620" y="324" class="accent">- GitHub Stats </tspan><tspan class="cc">----------------</tspan>
+  <tspan x="620" y="354" class="key">Repos</tspan><tspan class="cc"> ..................... </tspan><tspan class="value">331</tspan>
+  <tspan x="620" y="377" class="key">Gists</tspan><tspan class="cc"> ...................... </tspan><tspan class="value">76</tspan>
+  <tspan x="620" y="400" class="key">Stars</tspan><tspan class="cc"> ................... </tspan><tspan class="value">1,824</tspan>
+  <tspan x="620" y="423" class="key">Forks</tspan><tspan class="cc"> ..................... </tspan><tspan class="value">561</tspan>
+  <tspan x="620" y="446" class="key">Followers</tspan><tspan class="cc"> ............... </tspan><tspan class="value">1,016</tspan>
+</text>
+</svg>
