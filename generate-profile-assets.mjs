@@ -17,8 +17,8 @@ const profile = {
 
 const svg = {
   width: 985,
-  height: 610,
-  panel: { x: 24, y: 24, width: 937, height: 562 },
+  height: 560,
+  panel: { x: 24, y: 24, width: 937, height: 512 },
 };
 
 const columns = {
@@ -48,10 +48,7 @@ const rows = [
   { column: "right", y: 354, label: "Repos", value: "331" },
   { column: "right", y: 377, label: "Stars", value: "1,824" },
   { column: "right", y: 400, label: "Commits", value: "0" },
-  { column: "right", y: 423, label: "LoC", value: "0" },
-  { column: "right", y: 446, label: "Added", value: "0++" },
-  { column: "right", y: 469, label: "Deleted", value: "0--" },
-  { column: "right", y: 492, label: "Followers", value: "1,016" },
+  { column: "right", y: 423, label: "Followers", value: "1,016" },
 ];
 
 const themes = {
@@ -127,6 +124,17 @@ async function githubGraphql(query, variables = {}) {
   }
 }
 
+async function waitForRateLimitIfNeeded(rateLimit) {
+  if (!rateLimit || rateLimit.remaining > 100) {
+    return;
+  }
+
+  const resetAt = new Date(rateLimit.resetAt).getTime();
+  const delay = Math.max(0, resetAt - Date.now()) + 5000;
+  console.warn(`GitHub GraphQL rate limit is low (${rateLimit.remaining}); waiting until ${rateLimit.resetAt}.`);
+  await new Promise((resolve) => setTimeout(resolve, delay));
+}
+
 async function githubJson(path) {
   const headers = {
     Accept: "application/vnd.github+json",
@@ -157,13 +165,10 @@ async function getPublicRepos(login) {
 }
 
 async function getGithubStats(login) {
-  const [user, repos] = await Promise.all([
+  const [user, repos, commitContributions] = await Promise.all([
     githubJson(`/users/${login}`),
     getPublicRepos(login),
-  ]);
-  const [commitContributions, loc] = await Promise.all([
-    getCommitContributions(login, user.created_at),
-    getLineOfCodeStats(login, repos),
+    getCommitContributions(login),
   ]);
 
   return {
@@ -173,13 +178,16 @@ async function getGithubStats(login) {
     stars: repos.reduce((total, repo) => total + repo.stargazers_count, 0),
     forks: repos.reduce((total, repo) => total + repo.forks_count, 0),
     commitContributions,
-    loc,
   };
 }
 
-async function getCommitContributions(login, createdAt) {
+async function getCommitContributions(login) {
   const query = `
     query($login: String!, $from: DateTime!, $to: DateTime!) {
+      rateLimit {
+        remaining
+        resetAt
+      }
       user(login: $login) {
         contributionsCollection(from: $from, to: $to) {
           totalCommitContributions
@@ -188,88 +196,18 @@ async function getCommitContributions(login, createdAt) {
     }`;
 
   let total = 0;
-  const startYear = new Date(createdAt).getUTCFullYear();
+  const user = await githubJson(`/users/${login}`);
+  const startYear = new Date(user.created_at).getUTCFullYear();
   const currentYear = new Date().getUTCFullYear();
   for (let year = startYear; year <= currentYear; year += 1) {
     const from = `${year}-01-01T00:00:00Z`;
     const to = year === currentYear ? new Date().toISOString() : `${year}-12-31T23:59:59Z`;
     const data = await githubGraphql(query, { login, from, to });
     total += data.user.contributionsCollection.totalCommitContributions;
+    await waitForRateLimitIfNeeded(data.rateLimit);
   }
 
   return total;
-}
-
-async function getLineOfCodeStats(login, repos) {
-  const query = `
-    query($owner: String!, $name: String!, $cursor: String) {
-      repository(owner: $owner, name: $name) {
-        defaultBranchRef {
-          target {
-            ... on Commit {
-              history(first: 100, after: $cursor) {
-                pageInfo {
-                  hasNextPage
-                  endCursor
-                }
-                edges {
-                  node {
-                    additions
-                    deletions
-                    author {
-                      user {
-                        login
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }`;
-
-  let additions = 0;
-  let deletions = 0;
-  const sourceRepos = repos.filter((repo) => !repo.archived && !repo.fork);
-
-  for (const repo of sourceRepos) {
-    let cursor = null;
-    try {
-      for (;;) {
-        const data = await githubGraphql(query, {
-          owner: repo.owner.login,
-          name: repo.name,
-          cursor,
-        });
-        const history = data.repository?.defaultBranchRef?.target?.history;
-        if (!history) {
-          break;
-        }
-
-        for (const edge of history.edges) {
-          if (edge.node.author?.user?.login === login) {
-            additions += edge.node.additions;
-            deletions += edge.node.deletions;
-          }
-        }
-
-        if (!history.pageInfo.hasNextPage) {
-          break;
-        }
-        cursor = history.pageInfo.endCursor;
-      }
-    } catch (error) {
-      console.warn(`Skipping LoC for ${repo.full_name}: ${error.message}`);
-    }
-  }
-
-  return {
-    additions,
-    deletions,
-    total: additions - deletions,
-  };
 }
 
 function setRowValue(label, value) {
@@ -286,9 +224,6 @@ async function updateDynamicRows() {
   setRowValue("Repos", formatNumber(stats.repos));
   setRowValue("Stars", formatNumber(stats.stars));
   setRowValue("Commits", formatNumber(stats.commitContributions));
-  setRowValue("LoC", formatNumber(stats.loc.total));
-  setRowValue("Added", `${formatNumber(stats.loc.additions)}++`);
-  setRowValue("Deleted", `${formatNumber(stats.loc.deletions)}--`);
   setRowValue("Followers", formatNumber(stats.followers));
 }
 
@@ -329,8 +264,8 @@ text, tspan { white-space: pre; }
 </defs>
 <rect width="${svg.width}" height="${svg.height}" fill="${theme.bg}" rx="18"/>
 <circle cx="920" cy="68" r="94" fill="${theme.accent}" opacity="0.15"/>
-<circle cx="848" cy="542" r="76" fill="${theme.value}" opacity="0.13"/>
-<circle cx="100" cy="536" r="66" fill="${theme.key}" opacity="0.14"/>
+<circle cx="848" cy="492" r="76" fill="${theme.value}" opacity="0.13"/>
+<circle cx="100" cy="486" r="66" fill="${theme.key}" opacity="0.14"/>
 <rect x="${svg.panel.x}" y="${svg.panel.y}" width="${svg.panel.width}" height="${svg.panel.height}" fill="${theme.panel}" stroke="url(#edge)" stroke-width="2" rx="18" filter="url(#soft-shadow)"/>
 <rect x="56" y="50" width="873" height="56" fill="url(#bar)" rx="14"/>
 <text class="text">
