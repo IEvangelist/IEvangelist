@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const outputDir = dirname(fileURLToPath(import.meta.url));
 
 const profile = {
+  login: "IEvangelist",
   name: "David Pine",
   handle: "@IEvangelist",
   links: {
@@ -79,6 +80,72 @@ function xml(value) {
     .replaceAll("'", "&apos;");
 }
 
+function formatNumber(value) {
+  return new Intl.NumberFormat("en-US").format(value);
+}
+
+async function githubJson(path) {
+  const headers = {
+    Accept: "application/vnd.github+json",
+    "User-Agent": "IEvangelist-profile-readme",
+  };
+  const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
+
+  const response = await fetch(`https://api.github.com${path}`, { headers });
+  if (!response.ok) {
+    throw new Error(`GitHub API request failed: ${path} ${response.status} ${await response.text()}`);
+  }
+
+  return response.json();
+}
+
+async function getPublicRepos(login) {
+  const repos = [];
+  for (let page = 1; ; page += 1) {
+    const batch = await githubJson(`/users/${login}/repos?per_page=100&page=${page}&type=owner`);
+    repos.push(...batch);
+    if (batch.length < 100) {
+      return repos;
+    }
+  }
+}
+
+async function getGithubStats(login) {
+  const [user, repos] = await Promise.all([
+    githubJson(`/users/${login}`),
+    getPublicRepos(login),
+  ]);
+
+  return {
+    repos: user.public_repos,
+    gists: user.public_gists,
+    followers: user.followers,
+    stars: repos.reduce((total, repo) => total + repo.stargazers_count, 0),
+    forks: repos.reduce((total, repo) => total + repo.forks_count, 0),
+  };
+}
+
+function setRowValue(label, value) {
+  const row = rows.find((candidate) => candidate.label === label);
+  if (!row) {
+    throw new Error(`Unable to find row labeled ${label}`);
+  }
+
+  row.value = value;
+}
+
+async function updateDynamicRows() {
+  const stats = await getGithubStats(profile.login);
+  setRowValue("Repos", formatNumber(stats.repos));
+  setRowValue("Gists", formatNumber(stats.gists));
+  setRowValue("Stars", formatNumber(stats.stars));
+  setRowValue("Forks", formatNumber(stats.forks));
+  setRowValue("Followers", formatNumber(stats.followers));
+}
+
 function renderRow(row) {
   const col = columns[row.column];
   if (row.section) {
@@ -128,6 +195,8 @@ text, tspan { white-space: pre; }
 </svg>
 `;
 }
+
+await updateDynamicRows();
 
 writeFileSync(join(outputDir, "dark_mode.svg"), renderSvg("dark", themes.dark));
 writeFileSync(join(outputDir, "light_mode.svg"), renderSvg("light", themes.light));
